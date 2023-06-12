@@ -1,0 +1,476 @@
+/* Navigation Css and their items */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Giving background to navigation bar */
+#navigation::before {
+  content: "";
+  background-color: #0f171e;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+#navigation {
+  /* border: 2px solid red; */
+  display: flex;
+  /* position: relative; */
+  position: fixed;
+  width: 100vw;
+  height: 80px;
+  font-family: Amazon Ember, Amazon Arabic Ember, Arial, sans-serif !important;
+}
+
+.img {
+  margin: 28px 28px;
+  width: 121px;
+  filter: invert(100%);
+  /* border: 2px solid green; */
+}
+
+.left {
+  display: flex;
+  margin-left: -19px;
+  align-items: center;
+
+  /* border: 2px solid blue; */
+  width: 900px;
+  padding-top: 0px;
+}
+
+.left li {
+  list-style: none;
+  padding: 6px;
+}
+
+.left li a {
+  text-decoration: none;
+  color: rgb(189, 183, 183);
+
+  padding: 6px;
+  font-size: 1.2rem;
+}
+
+.left li a:hover {
+  color: rgb(230, 223, 223);
+  cursor: pointer;
+}
+
+.right {
+  /* border: 2px solid red; */
+  position: absolute;
+  right: 32px;
+  top: 20px;
+  display: flex;
+  padding-left: 12px;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0px 22px;
+}
+
+.right :hover {
+  cursor: pointer;
+  color: white;
+}
+
+.btn {
+  /* border: 2px solid green; */
+  width: 130px;
+  background-color: rgb(24, 116, 153);
+  height: 42px;
+  margin-right: 110px;
+  font-size: 1.2rem;
+  color: white;
+  border-radius: 7px;
+}
+
+.btn:hover {
+  background-color: rgb(19, 153, 206);
+}
+
+.input button {
+  margin-right: 121px;
+  height: 32px;
+  width: 49px;
+  font-size: 1.7rem;
+  background-color: transparent;
+  margin-left: -109px;
+  border: none;
+  color: rgb(133, 129, 129);
+
+  padding-bottom: 32px;
+}
+
+.input button :hover {
+  color: white;
+}
+
+.fa {
+  color: rgb(133, 129, 129);
+}
+
+.search {
+  /* border: 2px solid green; */
+  margin-right: 123px;
+  margin-left: -110px;
+}
+
+.person {
+  margin-left: -102px;
+}
+
+.person i {
+  color: rgb(155, 152, 152);
+  background-color: transparent;
+}
+
+#home {
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+.pop-up{
+    /* border: 2px solid red; */
+    width: 100%;
+    color:rgb(220, 8, 8);
+    padding:23px; 
+   
+}
+.pop-up1{
+    font-size: 2.5rem;
+    animation-name: slide;  
+    /* animation-timing-function: ease-in-out; */
+    animation-delay: 2s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transition:all;
+    transition-duration: 30min;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+
+   
+}
+@keyframes slide {
+    0%{
+       transform: translateX(0px);
+    }
+   
+    
+    50%{
+        transform: translateX(50%);
+       
+    }
+    100%{
+        transform: translateX(0%);
+
+
+    }
+
+    
+    
+}
+
+#home::before {
+  content: "";
+  background-image: linear-gradient(to right, #000 40%, transparent 58%),
+    url("https://m.media-amazon.com/images/G/31/AmazonVideo/2019/MLP.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  position: absolute;
+  width: 99.9%;
+  height: 90%;
+  z-index: -1;
+}
+
+#sign {
+  display: flex;
+  flex-direction: column;
+  margin: 123px 23px;
+
+  padding: 5rem 80px;
+  width: 50%;
+}
+
+.h1-secondary {
+  font-size: 3.2rem;
+  margin-bottom: 18px;
+  color: white;
+  font-family: "Fjalla One", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: lighter;
+}
+
+.primary {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 5px;
+  /* font-family: "Amazon Ember"; */
+  /* font-family:  Amazon Ember,Amazon Arabic Ember,Arial,sans-serif!important; */
+  font-family: "Fjalla One", sans-serif;
+  font-weight: lighter;
+}
+
+.btna {
+  width: 300px;
+  height: 48px;
+  margin-top: 12px;
+  background-color: rgb(19, 153, 206);
+  color: white;
+  padding: 5px 23px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: none;
+  font-family: Amazon Ember, Amazon Arabic Ember, Arial, sans-serif !important;
+}
+
+.btna:hover {
+  background-color: rgb(11, 185, 253);
+  cursor: pointer;
+}
+#services::before {
+  content: "";
+  background-image: linear-gradient(to left, #000 40%, transparent 58%),
+    url(https://m.media-amazon.com/images/G/31/AmazonVideo/2021/X-site/MLP/TVOD/TVOD_MLP_Left.jpg);
+  position: absolute;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  width: 100%;
+  height: 80%;
+}
+#services {
+  /* margin-top: 240px; */
+  height: 80vh;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: right;
+  align-items: center;
+  overflow: hidden;
+}
+#rent {
+  padding: 23px 23px;
+  display: flex;
+
+  flex-direction: column;
+  margin-right: 53px;
+}
+.primary-h1 {
+  font-size: 2.5rem;
+  color: white;
+}
+.secondary-p {
+  font-size: 1.7rem;
+  margin-top: 23px;
+  color: white;
+}
+.btnn {
+  background-color: rgb(19, 153, 206);
+  height: 44px;
+  width: 300px;
+  padding: 12px 23px;
+  color: white;
+  margin-top: 42px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+}
+.btnn:hover {
+  background-color: rgb(11, 185, 253);
+  cursor: pointer;
+}
+
+#channel {
+  height: 80vh;
+  padding: 30px 75px;
+  display: flex;
+  flex-direction: row;
+  overflow-y: hidden;
+}
+.info {
+  width: 50%;
+  padding: 23px 55px;
+  height: 50%;
+}
+.tertiary {
+  font-size: 3rem;
+  font-weight: lighter;
+}
+.para {
+  font-size: 1.5rem;
+  margin-top: 23px;
+}
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  display: flex;
+  justify-items: center;
+  flex-wrap: wrap;
+  margin-left: 202px;
+  width: 60%;
+  height: 80%;
+}
+.box1 {
+  width: 31.5%;
+  margin: 5px 7px;
+  transition: all;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+}
+#box {
+  background: url("https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/LionsgatePlay-426X2946_V1.jpg")
+    center center / cover no-repeat;
+}
+#box2 {
+  background: url("https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/426x294_Discovery.jpg")
+    center center / cover no-repeat;
+}
+#box3 {
+  background: url("https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/Erosnow-426X2948_V1.jpg")
+    center center / cover no-repeat;
+}
+#box4 {
+  background: url("https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/426x294_MANORAMAMAX.jpg")
+    center center / cover no-repeat;
+}
+#box5 {
+  background: url("https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/hoichoi-426X2946_V1.jpg")
+    center center / cover no-repeat;
+}
+#box6 {
+  background: url("https://m.media-amazon.com/images/G/31/AmazonVideo/2021/X-site/MLP/Channels/Vrott.png")
+    center center / cover no-repeat;
+}
+#box7 {
+  background: url("https://m.media-amazon.com/images/G/31/AmazonVideo/2021/X-site/MLP/Channels/Amc.png")
+    center center / cover no-repeat;
+}
+#box8 {
+  background: url("	https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/Docubay-426X2947_V1.jpg")
+    center center / cover no-repeat;
+}
+#box9 {
+  background: url("https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/Mubi-426X2946_V1.jpg")
+    center center / cover no-repeat;
+}
+#box10 {
+  background: url("	https://m.media-amazon.com/images/G/31/AmazonVideo/2021/X-site/MLP/Channels/iWonder.png")
+    center center / cover no-repeat;
+}
+#box11 {
+  background: url("https://m.media-amazon.com/images/G/31/AmazonVideo/2021/X-site/MLP/Channels/Hayu.png")
+    center center / cover no-repeat;
+}
+#box12 {
+  background: url("	https://m.media-amazon.com/images/G/31/AmazonVideo/2021/X-site/MLP/Channels/Stingray.png")
+    center center / cover no-repeat;
+}
+.box1:hover {
+  box-shadow: -5px -5px 5px black;
+  transform: translate(1px);
+}
+
+#tv {
+  height: 50vh;
+  overflow: hidden;
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+}
+.amazon img {
+ 
+  width: 80%;
+}
+
+.content {
+  width: 60%;
+  height: 50%;
+  color: white;
+}
+.fourth {
+  font-size: 2.5rem;
+  font-weight: lighter;
+  color: white;
+}
+.tertary {
+  font-size: 1.5rem;
+  margin-top: 23px;
+  font-weight: lighter;
+  color: white;
+}
+
+.started {
+  width: 300px;
+  margin-top: 22px;
+  background-color: rgb(19, 153, 206);
+  color: white;
+  padding: 12px 12px;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 8px;
+}
+.started:hover {
+  background-color: rgb(11, 185, 253);
+  cursor: pointer;
+}
+
+#kids::before {
+  content: "";
+  position: absolute;
+  width: 99.9%;
+  height: 70%;
+  background-image: linear-gradient(to right, #000 40%, transparent 58%),
+    url(https://m.media-amazon.com/images/G/01/digital/video/Magellan_MLP/IN-kids-30Jan._CB1517304519_.jpg);
+  background-position: right top;
+  z-index: -1;
+}
+#kids {
+  height: 70vh;
+
+}
+.friends {
+
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  margin: 105px 105px;
+  padding: 12px 12px;
+}
+footer::before {
+  content: "";
+  position: absolute;
+  width: 99.9%;
+  height: 20%;
+  background-color: rgb(36, 35, 35);
+
+  z-index: -1;
+}
+.foot img {
+  width: 220px;
+  margin-bottom: -12px;
+}
+#ul {
+  display: flex;
+  justify-content: center;
+}
+.list {
+  list-style: none;
+  padding: 0px 21px;
+  text-align: center;
+}
+.list a {
+  text-decoration: none;
+  color: #0f79af;
+}
+.copy {
+  font-family: "Amazon Ember";
+  color: rgb(78, 75, 75);
+}
